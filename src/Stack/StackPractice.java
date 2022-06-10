@@ -26,22 +26,15 @@ public class StackPractice {
                     return false;
                 }
 
-                if(!Objects.equals(brackets.get(stack2.peek()),
-                        String.valueOf(s.charAt(i)))){
+                if(!Objects.equals(brackets.get(stack2.peek()), String.valueOf(s.charAt(i)))){
                     return false;
                 }
-
                 else {
                     stack2.pop();
                 }
             }
         }
 
-        if(stack2.isEmpty()){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return stack2.isEmpty();
     }
 }

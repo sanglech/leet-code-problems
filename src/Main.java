@@ -1,5 +1,6 @@
 import ArraysPractice.ArraysEasy;
 import BinarySearch.MyBinarySearch;
+import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
@@ -11,6 +12,9 @@ public class Main {
         System.out.println("Is Anagram: "+ ArraysEasy.isAnagram("car","rat"));
         System.out.println("TwoSum: "+ Arrays.toString(ArraysEasy.twoSum(new int[]{2, 7, 11, 15}, 9)));
        int i =  MyBinarySearch.myBinarySearch(new int[]{1,0,3,5,9,12},2);
+
+        int j = SlidingWindow.lengthOfLongestSubstring("dvdf");
     }
-    
+
+
 }
