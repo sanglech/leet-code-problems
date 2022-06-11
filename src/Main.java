@@ -1,4 +1,5 @@
 import ArraysPractice.ArraysEasy;
+import ArraysPractice.ArraysMedium;
 import BinarySearch.MyBinarySearch;
 import SlidingWindow.SlidingWindow;
 
@@ -14,7 +15,13 @@ public class Main {
        int i =  MyBinarySearch.myBinarySearch(new int[]{1,0,3,5,9,12},2);
 
         int j = SlidingWindow.lengthOfLongestSubstring("dvdf");
+
+        System.out.println("group anagrams "+ ArraysMedium.groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
+        System.out.println("two sum with 0(1) space: "+ Arrays.toString(SlidingWindow.twoSum(new int[]{1,2,3,4,4,9,56,90}, 8)));
+
+        System.out.println("string replacement: "+ SlidingWindow.characterReplacement("ABAB",2));
     }
+
 
 
 }

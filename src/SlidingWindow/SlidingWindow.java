@@ -1,6 +1,9 @@
 package SlidingWindow;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class SlidingWindow {
     public int maxProfit(int[] prices) {
@@ -42,5 +45,50 @@ public class SlidingWindow {
         }
 
         return max;
+    }
+
+    public static int[] twoSum(int[] numbers, int target) {
+        int l = 0;
+        int [] res = new int[2];
+        int r = numbers.length -1;
+
+        if(numbers.length==2){
+            res[0]=1;
+            res[1]=2;
+            return res;
+        }
+
+        while(l<r){
+            if(numbers[l] + numbers[r] > target){
+                r--;
+            }
+            else if(numbers[l]+ numbers[r]<target){
+                l++;
+            }
+            else {
+                res[0]= l+1;
+                res[1] = r+1;
+                break;
+            }
+        }
+        return res;
+    }
+
+    public static int characterReplacement(String s, int k) {
+        Map<Character, Integer> characterCount = new HashMap<>();
+        int result = 0;
+        int windowStart = 0;
+        for (int windowEnd = 0; windowEnd < s.length(); windowEnd++) {
+            char end = s.charAt(windowEnd);
+            characterCount.put(end, (characterCount.getOrDefault(end, 0) + 1));
+
+            while ((windowEnd - windowStart + 1) - Collections.max(characterCount.values()) > k) {
+                char startChar = s.charAt(windowStart);
+                characterCount.put(startChar, characterCount.get(startChar) - 1);
+                windowStart = windowStart + 1;
+            }
+            result = Math.max(result, windowEnd - windowStart + 1);
+        }
+        return result;
     }
 }
