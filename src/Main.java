@@ -20,6 +20,8 @@ public class Main {
         System.out.println("two sum with 0(1) space: "+ Arrays.toString(SlidingWindow.twoSum(new int[]{1,2,3,4,4,9,56,90}, 8)));
 
         System.out.println("string replacement: "+ SlidingWindow.characterReplacement("ABAB",2));
+
+        System.out.println("topKfrequent"+Arrays.toString(ArraysMedium.topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
     }
 
 
