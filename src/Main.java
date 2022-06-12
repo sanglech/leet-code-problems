@@ -24,6 +24,8 @@ public class Main {
         System.out.println("topKfrequent"+Arrays.toString(ArraysMedium.topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
 
         int [] res = ArraysMedium.productExceptSelf(new int[]{1,2,3,4});
+
+        SlidingWindow.threeSum(new int[]{-1,0,1,2,-1,-4});
     }
 
 
