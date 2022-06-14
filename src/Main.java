@@ -6,6 +6,9 @@ import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
+import static SlidingWindow.SlidingWindow.checkInclusion;
+import static SlidingWindow.SlidingWindow.maxArea;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +30,15 @@ public class Main {
 
         SlidingWindow.threeSum(new int[]{-1,0,1,2,-1,-4});
         System.out.print("Finding Maximum longest subarray in 2 arrays: "+LongestSequenceTwoArrays.FindMaxLength(new int[]{1, 2, 8, 2, 1}, new int[]{8, 2, 1, 4, 7 }));
+
+
+        String[] user1 = {"grey", "pink", "green", "red","black","silver"};
+        String[] user2 = {"grey", "rose red", "white", "pink", "green", "red","black","silver"};
+        System.out.println("Longest contiguous in two arrays is "+ LongestSequenceTwoArrays.longestCommonSubarray(user1,user2));
+
+        checkInclusion("adc","dcda");
+
+        maxArea(new int[]{1,2,1});
     }
 
 
