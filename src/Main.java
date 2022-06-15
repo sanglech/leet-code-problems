@@ -6,6 +6,7 @@ import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
+import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static SlidingWindow.SlidingWindow.checkInclusion;
 import static SlidingWindow.SlidingWindow.maxArea;
 
@@ -39,6 +40,8 @@ public class Main {
         checkInclusion("adc","dcda");
 
         maxArea(new int[]{1,2,1});
+
+        longestConsecutive(new int[]{100,4,200,1,3,2});
     }
 
 
