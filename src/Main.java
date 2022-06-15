@@ -7,6 +7,7 @@ import SlidingWindow.SlidingWindow;
 import java.util.Arrays;
 
 import static ArraysPractice.ArraysMedium.longestConsecutive;
+import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
 import static SlidingWindow.SlidingWindow.maxArea;
 
@@ -42,6 +43,15 @@ public class Main {
         maxArea(new int[]{1,2,1});
 
         longestConsecutive(new int[]{100,4,200,1,3,2});
+
+        String[][] badgeTimes = new String[][] {{"Paul", "1355"}, {"Jennifer", "1910"}, {"Jose", "835"}, {"Jose", "830"},
+                {"Paul", "1315"}, {"Chloe", "0"}, {"Chloe", "1910"}, {"Jose", "1615"}, {"Jose", "1640"}, {"Paul", "1405"},
+                {"Jose", "855"}, {"Jose", "930"}, {"Jose", "915"}, {"Jose", "730"}, {"Jose", "940"}, {"Jennifer", "1335"},
+                {"Jennifer", "730"}, {"Jose", "1630"}, {"Jennifer", "5"}, {"Chloe", "1909"}, {"Zhang", "1"}, {"Zhang", "10"},
+                {"Zhang", "109"}, {"Zhang", "110"}, {"Amos", "1"}, {"Amos", "2"}, {"Amos", "400"}, {"Amos", "500"},
+                {"Amos", "503"}, {"Amos", "504"}, {"Amos", "601"}, {"Amos", "602"}, {"Paul", "1416"},};
+
+        badgeTimes(badgeTimes);
     }
 
 
