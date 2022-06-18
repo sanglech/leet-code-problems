@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArraysMedium {
 
-    // Time Complexity: O(n)
+    // Time Complexity: O(mlogn)
     // Space: O(n)
     public static List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<String, List<String>>();
