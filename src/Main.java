@@ -9,7 +9,7 @@ import java.util.Arrays;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
-import static SlidingWindow.SlidingWindow.maxArea;
+import static TwoPointers.TwoPointers.*;
 
 
 public class Main {
@@ -23,14 +23,14 @@ public class Main {
         int j = SlidingWindow.lengthOfLongestSubstring("dvdf");
 
         System.out.println("Group anagrams: "+ ArraysMedium.groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
-        System.out.println("two sum with 0(1) space: "+ Arrays.toString(SlidingWindow.twoSum(new int[]{1,2,3,4,4,9,56,90}, 8)));
+        System.out.println("two sum with 0(1) space: "+ Arrays.toString(twoSum2(new int[]{1,2,3,4,4,9,56,90}, 8)));
         System.out.println("string replacement: "+ SlidingWindow.characterReplacement("ABAB",2));
         System.out.println("topKfrequent: "+Arrays.toString(ArraysMedium.topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
 
 
         int [] res = ArraysMedium.productExceptSelf(new int[]{1,2,3,4});
 
-        SlidingWindow.threeSum(new int[]{-1,0,1,2,-1,-4});
+        threeSum(new int[]{-1,0,1,2,-1,-4});
         System.out.print("Finding Maximum longest subarray in 2 arrays: "+LongestSequenceTwoArrays.FindMaxLength(new int[]{1, 2, 8, 2, 1}, new int[]{8, 2, 1, 4, 7 }));
 
 
