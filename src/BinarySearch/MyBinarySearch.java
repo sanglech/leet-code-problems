@@ -1,6 +1,9 @@
 package BinarySearch;
 
 public class MyBinarySearch {
+
+    // Time Complexity: O(logn)
+    // Space: O(1)
     public static int myBinarySearch(int[] nums, int target) {
         if (nums == null || nums.length == 0) return -1;
         int left = 0;
@@ -14,6 +17,8 @@ public class MyBinarySearch {
         return -1;
     }
 
+    // Time Complexity: O(mlogn)
+    // Space: O(1)
     public static boolean searchMatrixlogMLogNSolution(int[][] matrix, int target) {
         int row = matrix.length;
         int col = matrix[0].length;
@@ -54,7 +59,8 @@ public class MyBinarySearch {
         return false;
     }
 
-    // logn solution
+    // Time Complexity: O(logn)
+    // Space: O(1)
     public boolean searchMatrixLognSolution(int[][] matrix, int target) {
         int row = matrix.length;
         int col = matrix[0].length;

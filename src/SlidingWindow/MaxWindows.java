@@ -6,6 +6,9 @@ import java.util.List;
     Given an array of numbers and a window size.
    Return the max value for every window in the number array. (sliding window)
  */
+
+// Time Complexity: O(n)
+// Space: O(n)
 public class MaxWindows {
     public static Integer [] maxWindows (int[] vals, int window){
         List<Integer> results = new ArrayList<>();

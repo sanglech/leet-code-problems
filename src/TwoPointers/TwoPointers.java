@@ -1,6 +1,9 @@
 package TwoPointers;
 
 public class TwoPointers {
+
+    // Time complexity: O(logn)
+    // Space complexity: O(1)
     public boolean isPalindrome(String s) {
         final StringBuilder sb = new StringBuilder();
         for (Character c : s.toLowerCase().toCharArray()) {

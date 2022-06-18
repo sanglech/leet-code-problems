@@ -4,8 +4,11 @@ import java.util.HashMap;
 /*
     Problem:
     Given a target value and an array of values.
-    Return thw two sum of two numbers in the array that add to the target.
+    Return the two sum of two numbers in the array that add to the target.
  */
+
+// Time Complexity: O(n)
+// Space: O(N)
 public class TwoSum {
     public static int[] twoSum (int []vals,int target){
         int[] res = new int[2];

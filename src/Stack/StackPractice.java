@@ -5,6 +5,9 @@ import java.util.Objects;
 import java.util.Stack;
 
 public class StackPractice {
+
+    // Time Complexity: O(n)
+    // Space: O(n)
     public boolean isValid(String s) {
 
         // Write your code here
@@ -40,14 +43,9 @@ public class StackPractice {
 
 }
 
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
+// Time Complexity: O(1)
+// Space: O(n)
+// Trick: have 2 stacks 1 for values and one for keeping track of minimum value.
 class MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;

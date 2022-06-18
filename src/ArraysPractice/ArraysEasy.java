@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class ArraysEasy {
+    // Time Complexity: O(n)
+    // Space: O(1)
     public static boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
         for(int i=0; i+1< nums.length; i++){
@@ -14,6 +16,8 @@ public class ArraysEasy {
         }
         return false;
     }
+    // Time Complexity: O(n+m)
+    // Space: O(n+m)
     public static boolean isAnagram(String s, String t) {
         HashMap<Character, Integer> sMap = new HashMap<>();
         HashMap<Character, Integer> tMap = new HashMap<>();
@@ -49,6 +53,8 @@ public class ArraysEasy {
         return true;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(n)
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> numMap = new HashMap<Integer, Integer>();
         int [] arr = new int[2];

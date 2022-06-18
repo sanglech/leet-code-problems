@@ -3,6 +3,8 @@ package SlidingWindow;
 import java.util.*;
 
 public class SlidingWindow {
+    // Time Complexity: O(n)
+    // Space: O(1)
     public int maxProfit(int[] prices) {
         if(prices.length==1){
             return 0;
@@ -24,6 +26,8 @@ public class SlidingWindow {
     }
 
 
+    // Time Complexity: O(n)
+    // Space: O(n)
     public static int lengthOfLongestSubstring(String s) {
         int max =0;
         int l =0;
@@ -44,6 +48,8 @@ public class SlidingWindow {
         return max;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(N)
     public static int[] twoSum(int[] numbers, int target) {
         int l = 0;
         int [] res = new int[2];
@@ -71,6 +77,8 @@ public class SlidingWindow {
         return res;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(N)
     public static int characterReplacement(String s, int k) {
         Map<Character, Integer> characterCount = new HashMap<>();
         int result = 0;
@@ -90,6 +98,8 @@ public class SlidingWindow {
     }
 
 
+    // Time Complexity: O(n^2)
+    // Space: O(N)
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
@@ -121,6 +131,8 @@ public class SlidingWindow {
         return res;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(n+m)
     public static boolean checkInclusion(String s1, String s2) {
 
         if(s2.length()<s1.length()) return false;
@@ -139,6 +151,8 @@ public class SlidingWindow {
         return false;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(1)
     public static int maxArea(int[] height) {
         int maxArea =0;
         if(height.length==2){

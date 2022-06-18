@@ -4,6 +4,8 @@ import java.util.*;
 
 public class ArraysMedium {
 
+    // Time Complexity: O(n)
+    // Space: O(n)
     public static List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<String, List<String>>();
         List<List<String>> result = new ArrayList<List<String>>();
@@ -28,6 +30,8 @@ public class ArraysMedium {
         return result;
     }
 
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     public static int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
         List<Integer> result = new ArrayList<>();
@@ -60,6 +64,9 @@ public class ArraysMedium {
         return result.stream().mapToInt(i->i).toArray();
     }
 
+    // Time Complexity: O(n)
+    // Space: O(n)
+
     public static int[] productExceptSelf(int[] nums) {
         int preFix =1;
         int postFix =1;
@@ -79,6 +86,8 @@ public class ArraysMedium {
         return res;
     }
 
+    // Time Complexity: O(n*m)
+    //Space: O(n)
     public static boolean isValidSudoku(char[][] board) {
         HashSet<String> h1 = new HashSet<String>();
         for(int row=0; row < 9; row++){
@@ -101,7 +110,8 @@ public class ArraysMedium {
         }
         return true;
     }
-
+    // Time Complexity: O(n)
+    // Space: O(n)
     public String encode(List<String> strs) {
         // write your code here
         StringBuilder result = new StringBuilder();
@@ -112,10 +122,6 @@ public class ArraysMedium {
         return result.toString();
     }
 
-    /*
-     * @param str: A string
-     * @return: dcodes a single string to a list of strings
-     */
     public List<String> decode(String str) {
         // write your code here
         List<String> result = new ArrayList<>();
@@ -137,6 +143,8 @@ public class ArraysMedium {
         return result;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(n)
     public static int longestConsecutive(int[] nums) {
         HashSet<Integer> numSet = new HashSet<>();
 

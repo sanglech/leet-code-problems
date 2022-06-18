@@ -13,6 +13,9 @@ plus the times that they badged in during the one-hour period.
 If there are multiple one-hour periods where this was true for an employee,
 just return the earliest one for that employee.
  */
+
+// Time Complexity: O(nlogn) due to sorting algo
+// Space: O(n)
 public class BadgeTimes {
 
     public static void badgeTimes(String[][] badgeTimes){

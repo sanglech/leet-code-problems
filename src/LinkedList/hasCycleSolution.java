@@ -2,6 +2,10 @@ package LinkedList;
 
 import java.util.HashSet;
 
+// Time Complexity: O(n)
+// Space: O(n)
+
+// Note use tortoise and hare for O(1) Space.
 public class hasCycleSolution {
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;

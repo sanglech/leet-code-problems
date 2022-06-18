@@ -10,6 +10,9 @@ Given an array of integers determine the maximum digits and return a list of all
 Ex. [ 1, 2, 3, 22, 13, 35 ].
 The maximum number of digits is 2 and 3 [1->2, 2->3, 3->3, 5->1].
  */
+
+// Time Complexity: O(n+m)
+// Space: O(n)
 public class MaximumDigits {
     public static Integer[] maximumDigits(int[] arr){
         List<Integer> res = new ArrayList<>();

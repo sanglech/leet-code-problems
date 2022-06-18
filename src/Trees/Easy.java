@@ -1,18 +1,9 @@
 package Trees;
 
 public class Easy {
-      public class TreeNode {
-          int val;
-          TreeNode left;
-          TreeNode right;
-          TreeNode() {}
-          TreeNode(int val) { this.val = val; }
-          TreeNode(int val, TreeNode left, TreeNode right) {
-              this.val = val;
-              this.left = left;
-              this.right = right;
-          }
-  }
+
+    // Time Complexity: O(n)
+    // Space: O(1)
     public TreeNode invertTree(TreeNode root) {
         if (root == null){
             return null;
@@ -27,6 +18,9 @@ public class Easy {
         return root;
     }
 
+
+    // Time Complexity: O(logn)
+    // Space: O(1)
     int maxHeight =0;
     public int diameterOfBinaryTree(TreeNode root) {
         maxDepth(root);
@@ -45,7 +39,8 @@ public class Easy {
 
     }
 
-
+    // Time Complexity: O(logn)
+    // Space: O(1)
     public boolean isBalanced(TreeNode root) {
         if(root==null){
             return true;
@@ -68,6 +63,8 @@ public class Easy {
         return 1 + Math.max(leftTree,rightTree);
     }
 
+    // Time Complexity: O(n)
+    // Space: O(1)
     public static boolean isSameTree(TreeNode p, TreeNode q) {
 
         if(p==null && q== null) return true;
@@ -87,6 +84,9 @@ public class Easy {
 
     }
 
+
+    // Time Complexity: O(logn)
+    // Space: O(1)
     public boolean isSameTree2(TreeNode s, TreeNode t){
         if(s==null && t==null) return true;
 
@@ -97,6 +97,8 @@ public class Easy {
         return false;
     }
 
+    // Time Complexity: O(logn)
+    // Space: O(1)
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root==null) return null;
 
@@ -108,8 +110,6 @@ public class Easy {
         if (left!=null && right!=null) return root;
         else if(left!=null) return left;
         else return right;
-
-
     }
 
 }

@@ -11,6 +11,9 @@ public class LinkedList {
      *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
+
+    // Time Complexity: O(n)
+    // Space: O(1)
     public ListNode reverseList(ListNode head) {
         ListNode currNode = head;
         ListNode prev= null;
@@ -25,6 +28,10 @@ public class LinkedList {
         return prev;
     }
 
+    // Time Complexity: O(n+m)
+    // Space: O(1)
+    // trick: Create a dummy node as head and create a current node in beginning
+    // then return the dumy nodes next.
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         ListNode currNode = new ListNode();
@@ -51,6 +58,8 @@ public class LinkedList {
         return head.next;
     }
 
+    // Time Complexity: O(n)
+    // Space: O(1)
     public void reorderList(ListNode head) {
         if(head==null||head.next==null) return;
 

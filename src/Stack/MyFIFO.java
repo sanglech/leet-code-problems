@@ -14,6 +14,8 @@ import java.util.Queue;
     3. TAKE: POP the first value off the queue and put it in result queue (if there is a value, if not put false).
  */
 
+// Time Complexity: O(1)
+// Space: O(N)
 public class MyFIFO {
     public static String[] FIFO(String[] cmds, int maxQueue){
         List<String> results = new ArrayList<>();
