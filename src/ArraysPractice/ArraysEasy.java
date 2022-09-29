@@ -56,7 +56,7 @@ public class ArraysEasy {
     // Time Complexity: O(n)
     // Space: O(n)
     public static int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> numMap = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> numMap = new HashMap<>();
         int [] arr = new int[2];
         if (nums[0]+nums[1]==target){
             arr[1]=1;
@@ -74,6 +74,38 @@ public class ArraysEasy {
             numMap.put(i,nums[i]);
         }
         return arr;
+    }
+
+    public int[] runningSum(int[] nums) {
+        int [] res = new int [nums.length];
+        int currRes= 0;
+
+        for (int i =0;i<nums.length;i++){
+            currRes+=nums[i];
+            res[i]=currRes;
+        }
+
+        return res;
+    }
+
+    public static int pivotIndex(int[] nums) {
+        int total = 0;
+        int currTotal = 0;
+        for(int num : nums){
+            total+=num;
+        }
+
+        for(int i =0; i<nums.length;i++){
+            currTotal+=nums[i];
+            if(total==currTotal){
+                return i;
+            }
+            else {
+                total-=nums[i];
+            }
+        }
+
+        return -1;
     }
 
 }
