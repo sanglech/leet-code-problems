@@ -54,6 +54,8 @@ public class Main {
                 {"Amos", "503"}, {"Amos", "504"}, {"Amos", "601"}, {"Amos", "602"}, {"Paul", "1416"},};
 
         badgeTimes(badgeTimes);
+
+        SlidingWindow.isSubsequence("abc","ahbgdc");
     }
 
 
