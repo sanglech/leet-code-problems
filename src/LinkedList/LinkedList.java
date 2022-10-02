@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.HashSet;
+
 public class LinkedList {
     /**
      * Definition for singly-linked list.
@@ -92,4 +94,40 @@ public class LinkedList {
             p2=preMiddle.next;
         }
     }
+
+    public ListNode middleNode(ListNode head) {
+        ListNode curr = head;
+        if(head==null){
+            return null;
+        }
+        int count = 0;
+        while(curr!=null){
+            curr=curr.next;
+            count++;
+        }
+        curr = head;
+        for(int i=0;i< Math.ceil(count/2);i++){
+            curr = curr.next;
+        }
+
+        return curr;
+
+    }
+
+    public ListNode detectCycle(ListNode head) {
+        ListNode curr = head;
+        HashSet<ListNode> visited = new HashSet<ListNode>();
+        while(curr!=null){
+            if(!visited.contains(curr)){
+                visited.add(curr);
+                curr = curr.next;
+            }
+            else {
+                return curr;
+            }
+        }
+        return null;
+    }
+
+
 }
