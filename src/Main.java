@@ -9,6 +9,7 @@ import java.util.Arrays;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
+import static SlidingWindow.SlidingWindow.longestPalindrome;
 import static TwoPointers.TwoPointers.*;
 
 
@@ -56,6 +57,8 @@ public class Main {
         badgeTimes(badgeTimes);
 
         SlidingWindow.isSubsequence("abc","ahbgdc");
+
+        longestPalindrome("abccccdd");
     }
 
 
