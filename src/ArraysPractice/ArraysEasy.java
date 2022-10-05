@@ -1,5 +1,6 @@
 package ArraysPractice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
@@ -162,9 +163,16 @@ public class ArraysEasy {
         return res;
     }
 
-    public int[] getConcatenation(int[] nums) {
-        int [] ans = Arrays.copyOf(nums, nums.length *2);
-        System.arraycopy(nums, 0, ans, nums.length, nums.length);
-        return ans;
+    public static int[] getConcatenation(int[] nums) {
+        ArrayList<Integer> ansList = new ArrayList<>();
+        for (int i=0;i< nums.length *2;i++){
+            if(i>nums.length-1){
+                ansList.add(i,nums[i-nums.length]);
+            }
+            else {
+                ansList.add(i,nums[i]);
+            }
+        }
+        return ansList.stream().mapToInt(k->k).toArray();
     }
 }
