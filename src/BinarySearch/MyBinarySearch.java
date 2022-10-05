@@ -81,4 +81,31 @@ public class MyBinarySearch {
         }
         return false;
     }
+
+
+    public int firstBadVersion(int n) {
+        int l = 1;
+        int r =n;
+        int res = 0;
+        if (n==1 && isBadVersion(n)) return 1;
+
+        while(l<=r){
+            int m = l + (r-l)/2;
+            if(isBadVersion(m)){
+                res=m;
+                r= m-1;
+            }
+            else {
+                l= m+1;
+            }
+        }
+
+        return res;
+    }
+
+    private boolean isBadVersion(int n) {
+        return n >= 4;
+    }
+
+
 }

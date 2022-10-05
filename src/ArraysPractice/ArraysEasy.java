@@ -107,5 +107,64 @@ public class ArraysEasy {
 
         return -1;
     }
+    public static int removeDuplicates(int[] nums) {
+        int res =1;
+        if(nums.length==1){
+            return 1;
+        }
 
+        for(int i=1; i< nums.length;i++){
+            if(nums[i]==nums[i-1]){
+                int j=i;
+                while(j<nums.length-1 && nums[j]==nums[i]){
+                    j++;
+                }
+                int temp = nums[j];
+                for(int k=i;k<=j;k++){
+                    nums[k]=temp;
+                }
+            }
+        }
+
+        for(int i=1; i<nums.length;i++){
+            if(nums[i-1]!=nums[i]){
+                res++;
+            }
+            else {
+                break;
+            }
+        }
+
+        return res;
+    }
+
+    public static int removeElement(int[] nums, int val) {
+        int res = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==val){
+                int j= i;
+                while(nums[j]==val && j< nums.length-1){
+                    j++;
+                }
+                nums[i]=nums[j];
+                nums[j]=val;
+            }
+        }
+
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=val){
+                res++;
+            }
+            else {
+                break;
+            }
+        }
+        return res;
+    }
+
+    public int[] getConcatenation(int[] nums) {
+        int [] ans = Arrays.copyOf(nums, nums.length *2);
+        System.arraycopy(nums, 0, ans, nums.length, nums.length);
+        return ans;
+    }
 }

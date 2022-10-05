@@ -6,6 +6,8 @@ import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
+import static ArraysPractice.ArraysEasy.removeDuplicates;
+import static ArraysPractice.ArraysEasy.removeElement;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
@@ -59,6 +61,10 @@ public class Main {
         SlidingWindow.isSubsequence("abc","ahbgdc");
 
         longestPalindrome("abccccdd");
+
+        removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
+
+        removeElement(new int[] {0,1,2,2,3,0,4,2},2);
     }
 
 
