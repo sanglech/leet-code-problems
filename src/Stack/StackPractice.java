@@ -41,6 +41,43 @@ public class StackPractice {
         return stack2.isEmpty();
     }
 
+    public static int calPoints(String[] operations) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        int temp;
+        int res = 0;
+        for (String operation : operations) {
+            if (Character.isDigit(operation.charAt(0)) || operation.charAt(0)=='-') {
+                stack.push(Integer.parseInt(operation));
+            }
+
+            else if(operation.equals("D")){
+                temp = stack.peek();
+                temp = temp *2;
+                stack.push(temp);
+            }
+            else if(operation.equals("C")){
+                stack.pop();
+            }
+
+            else if(operation.equals("+")) {
+                int temp1 = stack.pop();
+                int temp2 = stack.pop();
+                temp = temp1+temp2;
+                stack.push(temp2);
+                stack.push(temp1);
+                stack.push(temp);
+            }
+        }
+
+        while(!stack.isEmpty()){
+            res+= stack.pop();
+        }
+
+        return res;
+    }
+
 }
 
 // Time Complexity: O(1)
