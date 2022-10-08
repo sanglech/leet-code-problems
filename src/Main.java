@@ -11,6 +11,7 @@ import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
 import static SlidingWindow.SlidingWindow.longestPalindrome;
+import static Stack.QueuePractice.countStudents;
 import static Stack.StackPractice.calPoints;
 import static TwoPointers.TwoPointers.*;
 
@@ -69,6 +70,8 @@ public class Main {
         getConcatenation(new int[]{1,2,3});
 
         calPoints(new String[]{"5","-2","4","C","D","9","+","+"});
+
+        countStudents(new int[]{0,0,0,1,1,1,1,0,0,0}, new int[]{1,0,1,0,0,1,1,0,0,0});
     }
 
 
