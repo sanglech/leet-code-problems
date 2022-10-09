@@ -1,4 +1,4 @@
-package LinkedList;
+package Trees;
 
 public class InsertIntoBST {
     public TreeNode insertIntoBST(TreeNode root, int val) {
