@@ -9,6 +9,7 @@ import java.util.Arrays;
 import static ArraysPractice.ArraysEasy.*;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static BinarySearch.EatingBananas.minEatingSpeed;
+import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.SlidingWindow.checkInclusion;
 import static SlidingWindow.SlidingWindow.longestPalindrome;
@@ -75,6 +76,8 @@ public class Main {
         countStudents(new int[]{0,0,0,1,1,1,1,0,0,0}, new int[]{1,0,1,0,0,1,1,0,0,0});
 
         minEatingSpeed(new int[]{3,6,7,11}, 8);
+
+        minCostClimbingStairs(new int[]{1,100,1,1,1,100,1,1,100,1});
     }
 
 
