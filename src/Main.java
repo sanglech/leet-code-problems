@@ -11,8 +11,10 @@ import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static SlidingWindow.BadgeTimes.badgeTimes;
+import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplacement;
 import static SlidingWindow.SlidingWindow.checkInclusion;
 import static SlidingWindow.SlidingWindow.longestPalindrome;
+import static SlidingWindow.findAnagrams.findAnagrams;
 import static Stack.QueuePractice.countStudents;
 import static Stack.StackPractice.calPoints;
 import static TwoPointers.TwoPointers.*;
@@ -32,7 +34,7 @@ public class Main {
 
         System.out.println("Group anagrams: "+ ArraysMedium.groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
         System.out.println("two sum with 0(1) space: "+ Arrays.toString(twoSum2(new int[]{1,2,3,4,4,9,56,90}, 8)));
-        System.out.println("string replacement: "+ SlidingWindow.characterReplacement("ABAB",2));
+        System.out.println("string replacement: "+ characterReplacement("ABAB",2));
         System.out.println("topKfrequent: "+Arrays.toString(ArraysMedium.topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
 
 
@@ -78,6 +80,8 @@ public class Main {
         minEatingSpeed(new int[]{3,6,7,11}, 8);
 
         minCostClimbingStairs(new int[]{1,100,1,1,1,100,1,1,100,1});
+
+        findAnagrams("cbaebabacd","abc");
     }
 
 
