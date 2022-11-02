@@ -1,4 +1,4 @@
-package Recursion;
+package Graphs;
 
 public class NumberOfIslands {
     public int numIslands(char[][] grid) {
