@@ -10,6 +10,7 @@ import static ArraysPractice.ArraysEasy.*;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
+import static Graphs.CourseSchedule.canFinish;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplacement;
 import static SlidingWindow.SlidingWindow.checkInclusion;
@@ -82,6 +83,8 @@ public class Main {
         minCostClimbingStairs(new int[]{1,100,1,1,1,100,1,1,100,1});
 
         findAnagrams("cbaebabacd","abc");
+
+        canFinish(3,new int[][] {{1,0}, {1,2}, {0,1}});
     }
 
 
