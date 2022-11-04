@@ -10,6 +10,7 @@ import static ArraysPractice.ArraysEasy.*;
 import static ArraysPractice.ArraysMedium.longestConsecutive;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
+import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplacement;
@@ -85,6 +86,9 @@ public class Main {
         findAnagrams("cbaebabacd","abc");
 
         canFinish(3,new int[][] {{1,0}, {1,2}, {0,1}});
+
+       uniquePathsWithObstacles(new int[][]{{0,0,0},{0,1,0},{0,0,0}});
+        //uniquePathsWithObstacles(new int[][]{{0,0}});
     }
 
 
