@@ -24,7 +24,7 @@ import static SlidingWindow.SlidingWindow.longestPalindrome;
 import static SlidingWindow.findAnagrams.findAnagrams;
 import static Stack.QueuePractice.countStudents;
 import static Stack.StackPractice.calPoints;
-import static TwoPointers.MaxArea.maxArea;
+import static TwoPointers.ContainerWithTheMostWater.maxArea;
 import static TwoPointers.ThreeSum.threeSum;
 import static TwoPointers.TwoSum2.twoSum2;
 

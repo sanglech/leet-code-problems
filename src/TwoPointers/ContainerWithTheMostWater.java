@@ -1,10 +1,11 @@
 package TwoPointers;
 
 /*
-      Time Complexity: O(n)
-      Space: O(1)
+    11. Container With Most Water
+    Time Complexity: O(n)
+    Space: O(1)
  */
-public class MaxArea {
+public class ContainerWithTheMostWater {
     public static int maxArea(int[] height) {
         int maxArea =0;
         if(height.length==2){
