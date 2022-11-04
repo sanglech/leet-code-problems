@@ -5,10 +5,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+/*
+    49. Group Anagrams
+    Time Complexity: O(mlogn)
+    Space: O(n)
+ */
 public class GroupAnagrams {
-
-    // Time Complexity: O(mlogn)
-    // Space: O(n)
     public static List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<String, List<String>>();
         List<List<String>> result = new ArrayList<List<String>>();

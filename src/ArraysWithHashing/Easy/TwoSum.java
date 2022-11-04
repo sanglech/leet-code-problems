@@ -2,13 +2,14 @@ package ArraysWithHashing.Easy;
 
 import java.util.HashMap;
 /*
+1. Two Sum
     Problem:
     Given a target value and an array of values.
     Return the two sum of two numbers in the array that add to the target.
+    Time Complexity: O(n)
+    Space: O(N)
  */
 
-// Time Complexity: O(n)
-// Space: O(N)
 public class TwoSum {
     public static int[] twoSum (int []vals,int target){
         int[] res = new int[2];

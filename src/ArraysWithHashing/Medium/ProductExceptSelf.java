@@ -1,9 +1,11 @@
 package ArraysWithHashing.Medium;
 
+/*
+    238. Product of Array Except Self
+    Time Complexity: O(n)
+    Space: O(n)
+ */
 public class ProductExceptSelf {
-    // Time Complexity: O(n)
-    // Space: O(n)
-
     public static int[] productExceptSelf(int[] nums) {
         int preFix =1;
         int postFix =1;

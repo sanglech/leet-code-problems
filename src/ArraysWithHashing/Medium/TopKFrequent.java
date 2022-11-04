@@ -1,10 +1,12 @@
 package ArraysWithHashing.Medium;
 
 import java.util.*;
-
+/*
+    347. Top K Frequent Elements
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+ */
 public class TopKFrequent {
-    // Time Complexity: O(n)
-    // Space Complexity: O(n)
     public static int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
         List<Integer> result = new ArrayList<>();

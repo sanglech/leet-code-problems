@@ -2,9 +2,12 @@ package ArraysWithHashing.Medium;
 
 import java.util.HashSet;
 
-public class LongestConsecutive {
-    // Time Complexity: O(n)
-    // Space: O(n)
+/*
+    128. Longest Consecutive Sequence
+    Time Complexity: O(n)
+    Space: O(n)
+ */
+public class LongestConsecutiveSequence {
     public static int longestConsecutive(int[] nums) {
         HashSet<Integer> numSet = new HashSet<>();
 

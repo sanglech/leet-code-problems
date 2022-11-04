@@ -10,7 +10,7 @@ import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
 import static ArraysWithHashing.Easy.RemoveElement.removeElement;
 import static ArraysWithHashing.Easy.TwoSum.twoSum;
 import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
-import static ArraysWithHashing.Medium.LongestConsecutive.longestConsecutive;
+import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecutive;
 import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
 import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
 import static BinarySearch.EatingBananas.minEatingSpeed;
