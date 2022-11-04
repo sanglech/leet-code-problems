@@ -1,13 +1,18 @@
-import ArraysPractice.ArraysEasy;
-import ArraysPractice.ArraysMedium;
 import BinarySearch.MyBinarySearch;
 import DynamicProgramming.LongestSequenceTwoArrays;
 import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
-import static ArraysPractice.ArraysEasy.*;
-import static ArraysPractice.ArraysMedium.longestConsecutive;
+import static ArraysWithHashing.Easy.GetConcatination.getConcatenation;
+import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
+import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
+import static ArraysWithHashing.Easy.RemoveElement.removeElement;
+import static ArraysWithHashing.Easy.TwoSum.twoSum;
+import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
+import static ArraysWithHashing.Medium.LongestConsecutive.longestConsecutive;
+import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
+import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
@@ -25,22 +30,20 @@ import static TwoPointers.TwoPointers.*;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        System.out.println("Contains Duplicates: "+ ArraysEasy.containsDuplicate(new int[]{1, 2, 3, 4, 5, 1}));
-        System.out.println("Is Anagram: "+ ArraysEasy.isAnagram("car","rat"));
-        System.out.println("TwoSum: "+ Arrays.toString(ArraysEasy.twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println("TwoSum: "+ Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
 
-        System.out.println("Pivot Index: "+ ArraysEasy.pivotIndex(new int[]{1,7,3,6,5,6}));
+        System.out.println("Pivot Index: "+ pivotIndex(new int[]{1,7,3,6,5,6}));
 
         int i =  MyBinarySearch.myBinarySearch(new int[]{1,0,3,5,9,12},2);
         int j = SlidingWindow.lengthOfLongestSubstring("dvdf");
 
-        System.out.println("Group anagrams: "+ ArraysMedium.groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
+        System.out.println("Group anagrams: "+ groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
         System.out.println("two sum with 0(1) space: "+ Arrays.toString(twoSum2(new int[]{1,2,3,4,4,9,56,90}, 8)));
         System.out.println("string replacement: "+ characterReplacement("ABAB",2));
-        System.out.println("topKfrequent: "+Arrays.toString(ArraysMedium.topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
+        System.out.println("topKfrequent: "+Arrays.toString(topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2)));
 
 
-        int [] res = ArraysMedium.productExceptSelf(new int[]{1,2,3,4});
+        int [] res = productExceptSelf(new int[]{1,2,3,4});
 
         threeSum(new int[]{-1,0,1,2,-1,-4});
         System.out.print("Finding Maximum longest subarray in 2 arrays: "+LongestSequenceTwoArrays.FindMaxLength(new int[]{1, 2, 8, 2, 1}, new int[]{8, 2, 1, 4, 7 }));
