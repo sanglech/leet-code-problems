@@ -1,42 +1,49 @@
 package Graphs;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class CourseSchedule {
     public static boolean canFinish(int numCourses, int[][] prerequisites) {
-        List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < numCourses; i++) {
-            adj.add(new ArrayList<>());
+
+        if (numCourses ==0) return true;
+
+        HashMap<Integer, List<Integer>> courses = new HashMap<>();
+        for( int i =0; i<numCourses;i++){
+            courses.put(i,new ArrayList<>());
         }
 
-        for (int[] prerequisite : prerequisites) {
-            adj.get(prerequisite[0]).add(prerequisite[1]);
+        for (int[] prereq: prerequisites){
+            int src = prereq[0], dest = prereq[1];
+            if(!courses.containsKey(src) || !courses.containsKey(dest)){
+                return false;
+            }
+            List<Integer> temp = courses.get(src);
+            temp.add(dest);
+            courses.put(src,temp);
         }
 
-        int[] visited = new int[numCourses];
-        for (int i = 0; i < numCourses; i++) {
-            if (isCyclic(adj, visited, i)) {
+        for (int i: courses.keySet()){
+            if(isCyclic(i,courses,new HashSet<Integer>())){
                 return false;
             }
         }
         return true;
     }
 
-    private static boolean isCyclic(List<List<Integer>> adj, int[] visited, int curr) {
-        if (visited[curr] == 2) {
-            return true;
+    public static boolean isCyclic(int currentCourse, HashMap<Integer,List<Integer>> courses, HashSet<Integer> visited){
+        if(visited.contains(currentCourse)) return true;
+        if(courses.get(currentCourse).isEmpty()) return false;
+        visited.add(currentCourse);
+
+        List<Integer> thing = courses.get(currentCourse);
+        for(Integer i: thing){
+            if(isCyclic(i,courses,visited)){
+                return true;
+            };
         }
 
-        visited[curr] = 2;
-        for (int i = 0; i < adj.get(curr).size(); i++) {
-            if (visited[adj.get(curr).get(i)] != 1) {
-                if (isCyclic(adj, visited, adj.get(curr).get(i))) {
-                    return true;
-                }
-            }
-        }
-        visited[curr] = 1;
+        visited.remove(currentCourse);
+        courses.put(currentCourse, Collections.emptyList());
         return false;
     }
 
