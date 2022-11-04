@@ -1,6 +1,5 @@
 import BinarySearch.MyBinarySearch;
 import DynamicProgramming.LongestSequenceTwoArrays;
-import SlidingWindow.SlidingWindow;
 
 import java.util.Arrays;
 
@@ -18,9 +17,11 @@ import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
 import static SlidingWindow.BadgeTimes.badgeTimes;
+import static SlidingWindow.IsSubsequence.isSubsequence;
+import static SlidingWindow.LongestPalindrome.longestPalindrome;
 import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplacement;
-import static SlidingWindow.SlidingWindow.checkInclusion;
-import static SlidingWindow.SlidingWindow.longestPalindrome;
+import static SlidingWindow.LongestSubstringWithoutRepeat.lengthOfLongestSubstring;
+import static SlidingWindow.PermutationInString.checkInclusion;
 import static SlidingWindow.findAnagrams.findAnagrams;
 import static Stack.QueuePractice.countStudents;
 import static Stack.StackPractice.calPoints;
@@ -37,7 +38,7 @@ public class Main {
         System.out.println("Pivot Index: "+ pivotIndex(new int[]{1,7,3,6,5,6}));
 
         int i =  MyBinarySearch.myBinarySearch(new int[]{1,0,3,5,9,12},2);
-        int j = SlidingWindow.lengthOfLongestSubstring("dvdf");
+        int j = lengthOfLongestSubstring("dvdf");
 
         System.out.println("Group anagrams: "+ groupAnagrams(new String []{"eat","tea","tan","ate","nat","bat"}));
         System.out.println("two sum with 0(1) space: "+ Arrays.toString(twoSum2(new int[]{1,2,3,4,4,9,56,90}, 8)));
@@ -70,7 +71,7 @@ public class Main {
 
         badgeTimes(badgeTimes);
 
-        SlidingWindow.isSubsequence("abc","ahbgdc");
+        isSubsequence("abc","ahbgdc");
 
         longestPalindrome("abccccdd");
 

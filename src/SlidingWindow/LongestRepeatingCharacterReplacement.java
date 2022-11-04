@@ -4,9 +4,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+    424. Longest Repeating Character Replacement
+    Time Complexity: O(n)
+    Space: O(N)
+ */
 public class LongestRepeatingCharacterReplacement {
-    // Time Complexity: O(n)
-    // Space: O(N)
     public static int characterReplacement(String s, int k) {
         Map<Character, Integer> characterCount = new HashMap<>();
         int result = 0;
