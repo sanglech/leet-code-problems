@@ -2,6 +2,9 @@ package ArraysWithHashing.Medium;
 
 import java.util.HashSet;
 
+/*
+    36. Valid Sudoku
+ */
 public class IsValidSudoku {
     // Time Complexity: O(n*m)
     //Space: O(n)
