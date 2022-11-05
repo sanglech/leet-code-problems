@@ -7,7 +7,7 @@ import java.util.List;
     853. Car Fleet
  */
 public class CarFleet {
-    public int carFleet(int target, int[] position, int[] speed) {
+    public static int carFleet(int target, int[] position, int[] speed) {
         if(position.length==0 || speed.length==0) return 0;
         int res =0;
         double currTime =0;
