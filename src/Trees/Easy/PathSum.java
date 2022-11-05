@@ -1,5 +1,10 @@
-package Trees;
+package Trees.Easy;
 
+import Trees.TreeNode;
+
+/*
+    112. Path Sum
+ */
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         int val =0;
