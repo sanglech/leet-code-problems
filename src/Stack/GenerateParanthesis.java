@@ -2,6 +2,9 @@ package Stack;
 
 import java.util.*;
 
+/*
+    22. Generate Parentheses
+ */
 public class GenerateParanthesis {
     Stack<String> stack = new Stack<>();
 

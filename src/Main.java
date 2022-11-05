@@ -23,6 +23,7 @@ import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplac
 import static SlidingWindow.LongestSubstringWithoutRepeat.lengthOfLongestSubstring;
 import static SlidingWindow.PermutationInString.checkInclusion;
 import static SlidingWindow.findAnagrams.findAnagrams;
+import static Stack.CarFleet.carFleet;
 import static Stack.DailyTemperatures.dailyTemperatures;
 import static Stack.QueuePractice.countStudents;
 import static Stack.StackPractice.calPoints;
@@ -98,6 +99,8 @@ public class Main {
         //uniquePathsWithObstacles(new int[][]{{0,0}});
 
         dailyTemperatures(new int[] {73,74,75,71,69,72,76,73});
+
+        carFleet(10,new int[]{6,8},new int[]{3,2});
     }
 
 
