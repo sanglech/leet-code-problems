@@ -3,12 +3,14 @@ package Trees.Trie;
 import java.util.Map;
 import java.util.HashMap;
 
+/*
+    208. Implement Trie (Prefix Tree)
+ */
+class TrieNode {
+    boolean word;   // isLeaf
+    Map<Character, TrieNode> children = new HashMap<>();
+}
 public class Trie {
-
-    class TrieNode {
-        boolean word;   // isLeaf
-        Map<Character, TrieNode> children = new HashMap<>();
-    }
 
     TrieNode root;
 
