@@ -1,5 +1,8 @@
 package ArraysWithHashing.Easy;
 
+/*
+    724. Find Pivot Index
+ */
 public class PivotIndex {
     public static int pivotIndex(int[] nums) {
         int total = 0;
