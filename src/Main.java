@@ -21,6 +21,7 @@ import static SlidingWindow.IsSubsequence.isSubsequence;
 import static SlidingWindow.LongestPalindrome.longestPalindrome;
 import static SlidingWindow.LongestRepeatingCharacterReplacement.characterReplacement;
 import static SlidingWindow.LongestSubstringWithoutRepeat.lengthOfLongestSubstring;
+import static SlidingWindow.MinimumSubArrayLength.minSubArrayLen;
 import static SlidingWindow.PermutationInString.checkInclusion;
 import static SlidingWindow.findAnagrams.findAnagrams;
 import static Stack.CarFleet.carFleet;
@@ -101,6 +102,9 @@ public class Main {
         dailyTemperatures(new int[] {73,74,75,71,69,72,76,73});
 
         carFleet(10,new int[]{6,8},new int[]{3,2});
+
+        minSubArrayLen(7,new int[]{2,3,1,2,4,3});
+
     }
 
 
