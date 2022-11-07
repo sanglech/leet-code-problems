@@ -10,6 +10,7 @@ import static ArraysWithHashing.Easy.RemoveElement.removeElement;
 import static ArraysWithHashing.Easy.TwoSum.twoSum;
 import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
 import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecutive;
+import static ArraysWithHashing.Medium.NumOfSubarraysOfSizeK.numOfSubarrays;
 import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
 import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
 import static BinarySearch.EatingBananas.minEatingSpeed;
@@ -104,6 +105,8 @@ public class Main {
         carFleet(10,new int[]{6,8},new int[]{3,2});
 
         minSubArrayLen(7,new int[]{2,3,1,2,4,3});
+
+        numOfSubarrays(new int []{2,2,2,2,5,5,5,8},3,4);
 
     }
 
