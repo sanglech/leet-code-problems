@@ -3,6 +3,9 @@ package Heap;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+/*
+    295. Find Median from Data Stream
+ */
 public class Median {
     PriorityQueue<Integer> small;   // maxHeap
     PriorityQueue<Integer> large;   // minHeap
