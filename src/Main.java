@@ -15,6 +15,7 @@ import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
 import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
+import static DynamicProgramming.LongestPalindromeSubString.longestPalindromeSubString;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
 import static SlidingWindow.BadgeTimes.badgeTimes;
@@ -107,6 +108,7 @@ public class Main {
         minSubArrayLen(7,new int[]{2,3,1,2,4,3});
 
         numOfSubarrays(new int []{2,2,2,2,5,5,5,8},3,4);
+        longestPalindromeSubString("abb");
 
     }
 
