@@ -1,5 +1,8 @@
 package DynamicProgramming;
 
+/*
+    746. Min Cost Climbing Stairs
+ */
 public class ClimbingStairsWithCost {
     public static int minCostClimbingStairs(int[] cost) {
 
