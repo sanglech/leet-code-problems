@@ -8,6 +8,7 @@ import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
 import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
 import static ArraysWithHashing.Easy.RemoveElement.removeElement;
 import static ArraysWithHashing.Easy.TwoSum.twoSum;
+import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
 import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
 import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecutive;
 import static ArraysWithHashing.Medium.NumOfSubarraysOfSizeK.numOfSubarrays;
@@ -109,6 +110,8 @@ public class Main {
 
         numOfSubarrays(new int []{2,2,2,2,5,5,5,8},3,4);
         longestPalindromeSubString("abb");
+
+        lastStoneWeightII(new int[]{31,26,33,21,40});
 
     }
 
