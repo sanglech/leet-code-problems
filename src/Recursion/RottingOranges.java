@@ -1,4 +1,4 @@
-package Graphs;
+package Recursion;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

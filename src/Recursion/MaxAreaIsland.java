@@ -1,4 +1,4 @@
-package Graphs;
+package Recursion;
 
 public class MaxAreaIsland {
     public int maxAreaOfIsland(int[][] grid) {
