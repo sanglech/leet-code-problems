@@ -1,7 +1,5 @@
 package Graphs;
 
-// GraphNode used for adjacency list
-
 import java.util.*;
 
 public class AdjacencyList {

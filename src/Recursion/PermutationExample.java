@@ -3,6 +3,9 @@ package Recursion;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+    46. Permutations
+ */
 public class PermutationExample {
     // Time: O(n^2 * n!)
     public static List<List<Integer>> permutationsRecursive(int[] nums) {
@@ -19,8 +22,7 @@ public class PermutationExample {
         List<List<Integer>> perms = helper(i + 1, nums);
         for (List<Integer> p : perms) {
             for (int j = 0; j < p.size() + 1; j++) {
-                List<Integer> pCopy = new ArrayList<>();
-                pCopy.addAll(p);
+                List<Integer> pCopy = new ArrayList<>(p);
                 pCopy.add(j, nums[i]);
                 resPerms.add(pCopy);
             }
