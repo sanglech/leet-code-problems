@@ -17,9 +17,7 @@ public class CourseSchedule {
             if(!courses.containsKey(src) || !courses.containsKey(dest)){
                 return false;
             }
-            List<Integer> temp = courses.get(src);
-            temp.add(dest);
-            courses.put(src,temp);
+            courses.get(src).add(dest);
         }
 
         for (int i: courses.keySet()){
