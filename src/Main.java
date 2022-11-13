@@ -1,6 +1,7 @@
 import BinarySearch.MyBinarySearch;
 import DynamicProgramming.LongestSequenceTwoArrays;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 import static ArraysWithHashing.Easy.GetConcatination.getConcatenation;
@@ -8,7 +9,6 @@ import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
 import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
 import static ArraysWithHashing.Easy.RemoveElement.removeElement;
 import static ArraysWithHashing.Easy.TwoSum.twoSum;
-import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
 import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
 import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecutive;
 import static ArraysWithHashing.Medium.NumOfSubarraysOfSizeK.numOfSubarrays;
@@ -16,6 +16,7 @@ import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
 import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
+import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
 import static DynamicProgramming.LongestPalindromeSubString.longestPalindromeSubString;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
@@ -37,7 +38,7 @@ import static TwoPointers.TwoSum2.twoSum2;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         System.out.println("TwoSum: "+ Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
 
