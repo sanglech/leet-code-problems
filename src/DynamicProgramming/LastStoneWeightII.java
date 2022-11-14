@@ -2,7 +2,7 @@ package DynamicProgramming;
 
 /*
     1049. Last Stone Weight II
-    
+
     This question eaquals to partition an array into 2 subsets whose difference is minimal
     (1) S1 + S2  = S
     (2) S1 - S2 = diff

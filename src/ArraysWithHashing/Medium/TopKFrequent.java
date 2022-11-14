@@ -11,12 +11,8 @@ public class TopKFrequent {
         HashMap<Integer,Integer> map = new HashMap<>();
         List<Integer> result = new ArrayList<>();
 
-        for (int num : nums) {
-            if (map.containsKey(num)) {
-                map.put(num, map.get(num) + 1);
-            } else {
-                map.put(num, 1);
-            }
+        for(int num : nums){
+            map.put(num,map.getOrDefault(num,1)+1);
         }
 
         // alternateive solution.
