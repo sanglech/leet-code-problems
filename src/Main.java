@@ -8,6 +8,7 @@ import static ArraysWithHashing.Easy.GetConcatination.getConcatenation;
 import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
 import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
 import static ArraysWithHashing.Easy.RemoveElement.removeElement;
+import static ArraysWithHashing.Easy.RomanNumeralConverter.romanToInt;
 import static ArraysWithHashing.Easy.TwoSum.twoSum;
 import static ArraysWithHashing.Medium.GroupAnagrams.groupAnagrams;
 import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecutive;
@@ -113,6 +114,8 @@ public class Main {
         longestPalindromeSubString("abb");
 
         lastStoneWeightII(new int[]{31,26,33,21,40});
+
+        romanToInt("MCMXCIV");
 
     }
 
