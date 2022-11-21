@@ -9,6 +9,7 @@ class Solution:
                 stack.append(c)
                 continue
             else:
+                # No peek function use stack[-1] as peek
                 if not stack or paraDict[c]!=stack[-1]:
                     return False
             stack.pop()
