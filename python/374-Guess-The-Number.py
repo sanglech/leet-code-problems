@@ -11,7 +11,8 @@ class Solution:
         r =n 
         while (l<=r):
             mid = l+(r-l)//2
-            guessNum = guess(mid)
+            #guessNum = guess(mid) only defined in LC
+            guessNum =0
             if(guessNum==0):
                 return mid
             elif guessNum == -1:
