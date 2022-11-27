@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+/*
+    1700 - Number of students unable to eat
+ */
 public class QueuePractice {
     public static int countStudents(int[] students, int[] sandwiches) {
 
