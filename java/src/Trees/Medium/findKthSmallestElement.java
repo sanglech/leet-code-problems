@@ -1,8 +1,12 @@
-package Trees;
+package Trees.Medium;
+
+import Trees.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+    230. Kth Smallest Element in a BST
+ */
 public class findKthSmallestElement {
     List<Integer> sortedArr = new ArrayList<>();
     public int kthSmallest(TreeNode root, int k) {
