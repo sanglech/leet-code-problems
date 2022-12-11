@@ -1,7 +1,9 @@
 package Graphs;
 
 import java.util.*;
-
+/*
+    207. Course Schedule
+ */
 public class CourseSchedule {
     public static boolean canFinish(int numCourses, int[][] prerequisites) {
 
