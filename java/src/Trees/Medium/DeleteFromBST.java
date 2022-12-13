@@ -1,5 +1,10 @@
-package Trees;
+package Trees.Medium;
 
+import Trees.TreeNode;
+
+/*
+    450. Delete Node in a BST
+ */
 public class DeleteFromBST {
     public TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) {
