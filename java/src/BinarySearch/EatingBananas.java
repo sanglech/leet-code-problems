@@ -1,5 +1,8 @@
 package BinarySearch;
 
+/*
+    875. Koko Eating Bananas
+ */
 public class EatingBananas {
     public static int minEatingSpeed(int[] piles, int h) {
         int right=0;
