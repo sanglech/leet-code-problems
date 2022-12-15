@@ -1,5 +1,8 @@
 package DynamicProgramming;
 
+/*
+    62. Unique Paths
+ */
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
         int [][] grid = new int [m][n];
