@@ -9,7 +9,7 @@ import java.util.Stack;
 public class EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
         int res =0;
-        if(tokens.length==0) return 0;
+        if(tokens.length==0) return res;
         Stack<String> stack = new Stack<>();
 
         for(String s : tokens){
