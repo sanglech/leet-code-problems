@@ -21,6 +21,7 @@ import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
 import static DynamicProgramming.LongestPalindromeSubString.longestPalindromeSubString;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
+import static Graphs.FindIfPathExists.validPath;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.IsSubsequence.isSubsequence;
 import static SlidingWindow.LongestPalindrome.longestPalindrome;
@@ -116,6 +117,8 @@ public class Main {
         lastStoneWeightII(new int[]{31,26,33,21,40});
 
         romanToInt("MCMXCIV");
+
+        validPath(6,new int[][]{{0,1},{1,2},{2,0},{3,5},{5,4}},0,5);
 
     }
 
