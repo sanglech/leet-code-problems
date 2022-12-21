@@ -120,6 +120,8 @@ public class Main {
 
         validPath(6,new int[][]{{0,1},{1,2},{2,0},{3,5},{5,4}},0,5);
 
+        //TODO call keys and rooms and create list of lists
+
     }
 
 
