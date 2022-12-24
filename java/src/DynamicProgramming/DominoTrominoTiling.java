@@ -4,7 +4,6 @@ package DynamicProgramming;
     790. Domino and Tromino Tiling
     Mathematical explanation of DP/Recursion
     https://cs.stackexchange.com/questions/66658/domino-and-tromino-combined-tiling
-    
  */
 public class DominoTrominoTiling {
     public int numTilings(int n) {
