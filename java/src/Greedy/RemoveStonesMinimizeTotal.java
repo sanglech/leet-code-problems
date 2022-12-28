@@ -1,6 +1,5 @@
 package Greedy;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
@@ -13,8 +12,6 @@ public class RemoveStonesMinimizeTotal {
 
         if(piles.length==0) return res;
         PriorityQueue<Integer> prq = new PriorityQueue<>(Collections.reverseOrder());
-
-        Arrays.sort(piles);
 
         for (int p: piles){
             prq.offer(p);
