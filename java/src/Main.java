@@ -22,6 +22,7 @@ import static DynamicProgramming.LongestPalindromeSubString.longestPalindromeSub
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
 import static Graphs.CourseSchedule.canFinish;
 import static Graphs.FindIfPathExists.validPath;
+import static Greedy.RemoveStonesMinimizeTotal.minStoneSum;
 import static SlidingWindow.BadgeTimes.badgeTimes;
 import static SlidingWindow.IsSubsequence.isSubsequence;
 import static SlidingWindow.LongestPalindrome.longestPalindrome;
@@ -121,6 +122,8 @@ public class Main {
         validPath(6,new int[][]{{0,1},{1,2},{2,0},{3,5},{5,4}},0,5);
 
         //TODO call keys and rooms and create list of lists
+
+        minStoneSum(new int [] {5,4,9},2);
 
     }
 
