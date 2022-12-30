@@ -20,6 +20,7 @@ import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
 import static DynamicProgramming.LongestPalindromeSubString.longestPalindromeSubString;
 import static DynamicProgramming.UniquePathsWithObstacles.uniquePathsWithObstacles;
+import static Graphs.AllPathsFromSourceToTarget.allPathsSourceTarget;
 import static Graphs.CourseSchedule.canFinish;
 import static Graphs.FindIfPathExists.validPath;
 import static Greedy.RemoveStonesMinimizeTotal.minStoneSum;
@@ -125,6 +126,7 @@ public class Main {
 
         minStoneSum(new int [] {5,4,9},2);
 
+        allPathsSourceTarget(new int [][]{{4,3,1},{3,2,4},{},{4},{}});
     }
 
 
