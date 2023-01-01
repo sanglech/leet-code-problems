@@ -15,6 +15,7 @@ import static ArraysWithHashing.Medium.LongestConsecutiveSequence.longestConsecu
 import static ArraysWithHashing.Medium.NumOfSubarraysOfSizeK.numOfSubarrays;
 import static ArraysWithHashing.Medium.ProductExceptSelf.productExceptSelf;
 import static ArraysWithHashing.Medium.TopKFrequent.topKFrequent;
+import static ArraysWithHashing.Easy.WordPattern.wordPattern;
 import static BinarySearch.EatingBananas.minEatingSpeed;
 import static DynamicProgramming.ClimbingStairsWithCost.minCostClimbingStairs;
 import static DynamicProgramming.LastStoneWeightII.lastStoneWeightII;
@@ -127,6 +128,7 @@ public class Main {
         minStoneSum(new int [] {5,4,9},2);
 
         allPathsSourceTarget(new int [][]{{4,3,1},{3,2,4},{},{4},{}});
+        wordPattern("abba","dog dog dog dog");
     }
 
 
