@@ -1,5 +1,6 @@
 from typing import List
 
+# BFS Solution (not mine)
 class Solution:
     def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
         if not graph:
