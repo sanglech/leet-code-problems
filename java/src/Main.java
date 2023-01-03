@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import static ArraysWithHashing.Easy.GetConcatination.getConcatenation;
+import static ArraysWithHashing.Easy.MinDeleteCol.minDeletionSize;
 import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
 import static ArraysWithHashing.Easy.RemoveDuplicates.removeDuplicates;
 import static ArraysWithHashing.Easy.RemoveElement.removeElement;
@@ -129,6 +130,8 @@ public class Main {
 
         allPathsSourceTarget(new int [][]{{4,3,1},{3,2,4},{},{4},{}});
         wordPattern("abba","dog dog dog dog");
+
+        minDeletionSize(new String[] {"a","b"});
     }
 
 
