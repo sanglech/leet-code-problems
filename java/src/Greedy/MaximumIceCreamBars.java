@@ -1,4 +1,4 @@
-package SlidingWindow;
+package Greedy;
 
 import java.util.Arrays;
 
