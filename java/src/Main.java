@@ -4,6 +4,7 @@ import DynamicProgramming.LongestSequenceTwoArrays;
 import java.io.IOException;
 import java.util.Arrays;
 
+import static ArraysWithHashing.Easy.FindTheTownJudge.findJudge;
 import static ArraysWithHashing.Easy.GetConcatination.getConcatenation;
 import static ArraysWithHashing.Easy.MinDeleteCol.minDeletionSize;
 import static ArraysWithHashing.Easy.PivotIndex.pivotIndex;
@@ -132,6 +133,8 @@ public class Main {
         wordPattern("abba","dog dog dog dog");
 
         minDeletionSize(new String[] {"a","b"});
+
+        findJudge(3,new int[][] {{1,2},{2,3},{3,1}});
     }
 
 
